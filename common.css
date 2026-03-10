@@ -178,7 +178,7 @@ nav {
     background-position: 0 -1000px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fire 10s linear infinite;
+    animation: fire 10s linear infinite alternate;
     filter: drop-shadow(0 0 60px rgba(230, 57, 70, 0.5));
 }
 
