@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="common.css">
+  <title>Sanchili - Webshop</title>
+</head>
+
+<body id="home">
+
+  <nav class="navbar navbar-expand-lg px-4 px-lg-5 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" style="gap: 14px;" href="#">
+        <img src="img/logo.png" alt="Sanchili Logo" width="50" height="50" class="d-inline-block">
+        <span>Sanchili</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto" style="gap: 4px;">
+          <a class="nav-link" href="#home">Főoldal</a>
+          <a class="nav-link" href="#titlejump">Termékek</a>
+          <a class="nav-link position-relative" href="cart.html">Kosár <span id="cart-count"
+              class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-100 jumbo">
+    <h1><span>Sanchili</span></h1>
+    <button class="scroll-btn" onclick="document.getElementById('titlejump').scrollIntoView({behavior:'smooth'})">
+      Mutasd a termékeket
+    </button>
+  </div>
+
+  <div class="container-sm" style="margin-top: 200px;">
+    <h1 class="main-title" id="titlejump">Termékek</h1>
+    <div id="products" class="row d-flex justify-content-center align-items-stretch g-3"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+
+</html>
